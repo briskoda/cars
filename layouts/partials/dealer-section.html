@@ -1,0 +1,22 @@
+<section class="tc pa3 pa5-ns">
+  <article class="hide-child relative ba b--black-20 mw5 center">
+      <a href="{{.Params.dealer_url}}?utm_source=briskoda" class="db w-100" alt="">
+        <img src="{{ $.Site.BaseURL }}{{ .Params.dealer_logo }}" alt="{{ .Title}}" class="">
+    </a>
+    <div class="pa2 bt b--black-20">
+      <a class="f3 db link dark-blue hover-blue" href="{{.Params.dealer_url}}?utm_source=briskoda">{{ .Params.dealer_contact_name}}</a>
+      <p class="f6 gray mv1">
+        <a class="link dark-blue hover-blue" href="tel:{{ .Params.dealer_contact_number}}"><i class="fad fa-phone"></i> {{ .Params.dealer_contact_number}}</a>
+      </p>
+    </div>
+    <div class="pa2">
+      <span>{{.RawContent}}</span>
+    </div>
+    <div class="pa2">
+      <a class="link tc mt2 ph3 pv1 db bg-animate bg-dark-blue hover-bg-blue white f6 br1" href="tel:{{ .Params.dealer_contact_number}}">
+        Call {{ .Title }}
+      </a>
+    </div>
+    <a class="child absolute top-1 right-1 ba bw1 black-40 grow no-underline br-100 w1 h1 pa2 lh-solid b" href="#">×</a>
+  </article>
+</section>
