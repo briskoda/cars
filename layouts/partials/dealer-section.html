@@ -1,8 +1,20 @@
 <section class="tc pa3 pa5-ns">
   <article class="hide-child relative ba b--black-20 mw5 center">
-      <a href="{{.Params.dealer_url}}?utm_source=briskoda" class="db w-100" alt="">
-        <img src="{{ $.Site.BaseURL }}{{ .Params.dealer_logo }}" alt="{{ .Title}}" class="">
+    <a href="{{.Params.dealer_url}}?utm_source=briskoda" class="db w-100" alt="">
+      <img src="{{ $.Site.BaseURL }}{{ .Params.dealer_logo }}" alt="{{ .Title}}" class="">
     </a>
+    <div class="pa2 bt b--black-20">
+      {{if eq .Params.new_sales true}}
+        <div class="f6 fw6 ttu br-pill ph3 pv2 dib white bg-skoda-green">
+          New Cars
+        </div>
+      {{end}}
+      {{if eq .Params.used_sales true}}
+        <div class="f6 fw6 ttu br-pill ph3 pv2 dib white bg-skoda-green">
+          Used Cars
+        </div>
+      {{end}}
+    </div>
     <div class="pa2 bt b--black-20">
       <a class="f3 db link dark-blue hover-blue" href="{{.Params.dealer_url}}?utm_source=briskoda">{{ .Params.dealer_contact_name}}</a>
       <p class="f6 gray mv1">
@@ -13,7 +25,7 @@
       <span>{{.RawContent}}</span>
     </div>
     <div class="pa2">
-      <a class="link tc mt2 ph3 pv1 db bg-animate bg-dark-blue hover-bg-blue white f6 br1" href="tel:{{ .Params.dealer_contact_number}}">
+      <a class="link tc mt2 ph3 pv1 db bg-animate bg-briskoda-green hover-bg-briskoda-green white f6 br1" href="tel:{{ .Params.dealer_contact_number}}">
         Call {{ .Title }}
       </a>
     </div>

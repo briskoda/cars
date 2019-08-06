@@ -8,6 +8,8 @@ dealer_logo: "/images/dealers/horton-skoda-logo.png"
 dealer_url: "http://www.dennishorton.co.uk/skoda/"
 dealer_contact_name: "Paul Miller"
 dealer_contact_number: "01522 411 457"
+new_sales: true
+used_sales: true
 ---
 
 Horton’s were established in 1954 and have progressed to become a leading SEAT and SKODA dealership.
